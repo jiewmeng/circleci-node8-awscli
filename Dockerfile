@@ -10,3 +10,5 @@ RUN apk update && apk upgrade && \
 
 COPY node_modules /root/utils/node_modules
 COPY get-api-url.js /root/utils
+
+RUN apk --no-cache add zip
